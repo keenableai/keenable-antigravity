@@ -1,0 +1,13 @@
+{
+  "name": "keenable",
+  "version": "1.0.0",
+  "description": "Search the web and read any page as clean markdown with Keenable, a search engine built for AI agents. Keyless: no signup or API key needed.",
+  "mcpServers": {
+    "keenable": {
+      "httpUrl": "https://api.keenable.ai/mcp",
+      "headers": {
+        "X-Keenable-Title": "gemini-cli"
+      }
+    }
+  }
+}

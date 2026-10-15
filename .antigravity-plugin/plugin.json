@@ -1,0 +1,22 @@
+{
+  "name": "keenable",
+  "displayName": "Keenable",
+  "version": "1.0.0",
+  "description": "Search the web and read any page as clean markdown with Keenable, a search engine built for AI agents. Keyless: no signup or API key needed.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Find the release notes for the libraries in this project since our pinned versions and list the breaking changes",
+    "Search github.com for reports of this error from the last 30 days and tell me if there is a known fix",
+    "Research the leading agent observability tools and compare them in a table with a source for every claim"
+  ],
+  "category": "Developer Tools",
+  "keywords": ["web-search", "search", "web", "research", "content-extraction", "mcp", "keyless"],
+  "author": {
+    "name": "Keenable",
+    "email": "support@keenable.ai",
+    "url": "https://keenable.ai"
+  },
+  "homepage": "https://keenable.ai",
+  "repository": "https://github.com/keenableai/keenable-antigravity",
+  "license": "MIT"
+}
