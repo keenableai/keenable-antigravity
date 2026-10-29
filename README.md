@@ -9,6 +9,13 @@ for everyday web lookups.
 
 ## Install
 
+**Plugin marketplace in Antigravity**
+
+Keenable is in the [Plugin marketplace in Antigravity](https://antigravity.google/docs/marketplace).
+In the Antigravity app, open **Customizations** in the left sidebar, then
+**Marketplace**, find **Keenable** and click **+** on its card. Installed plugins
+are listed under **Customizations → Installed** and sync to the Antigravity CLI.
+
 **Antigravity CLI**
 
 ```bash
@@ -110,7 +117,7 @@ and reads no local files. See the [privacy policy](https://keenable.ai/privacy).
 ## Resources
 
 - [Keenable](https://keenable.ai)
-- [Documentation](https://docs.keenable.ai)
+- [Documentation](https://docs.keenable.ai/integrations/antigravity)
 - [Support](https://keenable.ai/contact)
 
 ## License
