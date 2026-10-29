@@ -4,8 +4,8 @@ Search the web and read pages as clean markdown from Google Antigravity or Gemin
 CLI with [Keenable](https://keenable.ai), a web search engine built for AI agents.
 **Keyless:** no signup and no API key.
 
-The plugin connects your agent to Keenable's hosted MCP server and adds two skills:
-one for everyday web lookups, one for multi-source research with citations.
+The plugin connects your agent to Keenable's hosted MCP server and adds a skill
+for everyday web lookups.
 
 ## Install
 
@@ -32,14 +32,14 @@ gemini extensions install https://github.com/keenableai/keenable-antigravity
 
 **MCP server only**
 
-To connect the tools without the skills, add this to
+To connect the tools without the skill, add this to
 `~/.gemini/config/mcp_config.json` (Antigravity):
 
 ```json
 {
   "mcpServers": {
     "keenable": {
-      "serverUrl": "https://api.keenable.ai/mcp"
+      "serverUrl": "https://api.keenable.ai/mcp-public"
     }
   }
 }
@@ -54,12 +54,11 @@ Then ask something that needs the live web.
 | `search_web_pages` | Ranked web results with an excerpt of each page, narrowed by site or publication date when needed. |
 | `fetch_page_content` | Any URL as clean markdown, or only the part an extraction prompt asks for. |
 
-## Skills
+## Skill
 
 | Skill | What it does |
 |---|---|
 | `keenable-web` | Everyday web lookups: when to search, when to read a page, how to cite. |
-| `keenable-deep-research` | Breaks a broad question into sub-questions, reads the strongest sources, cross-checks, and writes a cited answer. |
 
 ## Example prompts
 
@@ -89,7 +88,7 @@ add the server with it in `~/.gemini/config/mcp_config.json`:
 {
   "mcpServers": {
     "keenable-account": {
-      "serverUrl": "https://api.keenable.ai/mcp",
+      "serverUrl": "https://api.keenable.ai/mcp-public",
       "headers": {
         "X-API-Key": "keen_<your_key>"
       }
@@ -98,11 +97,11 @@ add the server with it in `~/.gemini/config/mcp_config.json`:
 }
 ```
 
-The skills work with either server.
+The skill works with either server.
 
 ## Data and security
 
-The plugin talks only to `https://api.keenable.ai/mcp` over HTTPS. Search
+The plugin talks only to `https://api.keenable.ai/mcp-public` over HTTPS. Search
 queries and requested URLs are sent to Keenable, along with an
 `X-Keenable-Title` header (`antigravity` or `gemini-cli`) that identifies the
 plugin's traffic. It sends no credentials, runs no local code or shell commands,
