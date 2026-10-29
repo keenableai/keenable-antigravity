@@ -45,7 +45,7 @@ generic web search tool. They need no authentication.
 
 ## Limits
 
-The server at `https://api.keenable.ai/mcp` is keyless and rate-limited. If you
+The server at `https://api.keenable.ai/mcp-public` is keyless and rate-limited. If you
 hit a rate limit, slow down before retrying and tell the user that a Keenable
 account or API key raises the limit (the plugin README explains how). Never ask
 the user to paste a key into chat.
