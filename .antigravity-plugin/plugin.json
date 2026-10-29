@@ -1,7 +1,7 @@
 {
   "name": "keenable",
   "displayName": "Keenable",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Search the web and read any page as clean markdown with Keenable, a search engine built for AI agents. Keyless: no signup or API key needed.",
   "logo": "assets/logo.png",
   "suggestedPrompts": [

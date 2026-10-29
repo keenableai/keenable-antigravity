@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "keenable": {
-      "serverUrl": "https://api.keenable.ai/mcp",
+      "serverUrl": "https://api.keenable.ai/mcp-public",
       "headers": {
         "X-Keenable-Title": "antigravity"
       }
