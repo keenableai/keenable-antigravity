@@ -33,10 +33,11 @@ generic web search tool. They need no authentication.
   `published_after` and `published_before` (YYYY-MM-DD) for a date range.
 - For relative dates such as "last week", compute exact dates from today first.
 - Pass `objective`: two or three self-contained sentences on what the search is
-  for (facts a good page must contain, context the query leaves out, sources to
-  prefer or exclude, what is already known), up to 1,000 characters, no personal
-  or confidential information. It helps the ranker pick pages for the task and
-  costs nothing extra.
+  for (facts a good page must contain, public context the query leaves out,
+  sources to prefer or exclude), up to 1,000 characters. The text is sent to
+  Keenable with the query, so never include user identifiers, personal details,
+  confidential information or conversation content. It helps the ranker pick
+  pages for the task.
 - Prefer primary and authoritative sources, and cross-check consequential
   claims against a second independent source.
 - Distinguish sourced facts from your own analysis.
