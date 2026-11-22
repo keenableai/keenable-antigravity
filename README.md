@@ -58,7 +58,7 @@ Then ask something that needs the live web.
 
 | Tool | What it does |
 |---|---|
-| `search_web_pages` | Ranked web results with an excerpt of each page, narrowed by site or publication date when needed. |
+| `search_web_pages` | Ranked web results with an excerpt of each page, narrowed by site or publication date when needed. Optional `objective` (up to 1,000 characters) says what the search is for; Keenable ranks results by `query` and `objective` together. |
 | `fetch_page_content` | Any URL as clean markdown, or only the part an extraction prompt asks for. |
 
 ## Skill
