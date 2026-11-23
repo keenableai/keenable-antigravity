@@ -109,7 +109,7 @@ The skill works with either server.
 ## Data and security
 
 The plugin talks only to `https://api.keenable.ai/mcp-public` over HTTPS. Search
-queries and requested URLs are sent to Keenable, along with an
+queries, the optional search `objective` and requested URLs are sent to Keenable, along with an
 `X-Keenable-Title` header (`antigravity` or `gemini-cli`) that identifies the
 plugin's traffic. It sends no credentials, runs no local code or shell commands,
 and reads no local files. See the [privacy policy](https://keenable.ai/privacy).
