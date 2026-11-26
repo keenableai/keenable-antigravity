@@ -32,6 +32,12 @@ generic web search tool. They need no authentication.
 - Narrow with parameters instead of query words: `site` for one domain,
   `published_after` and `published_before` (YYYY-MM-DD) for a date range.
 - For relative dates such as "last week", compute exact dates from today first.
+- Pass `objective` only for multi-step or ambiguous questions, not every search.
+  In one to three sentences, say what the query leaves out (who, where, when,
+  which sources count) and what earlier searches found; do not restate the
+  question. Up to 1,000 characters. It is sent to Keenable with the query, so
+  never include user identifiers or personal or confidential details, and omit
+  it when it cannot be written without them.
 - Prefer primary and authoritative sources, and cross-check consequential
   claims against a second independent source.
 - Distinguish sourced facts from your own analysis.

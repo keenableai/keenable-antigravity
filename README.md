@@ -58,7 +58,7 @@ Then ask something that needs the live web.
 
 | Tool | What it does |
 |---|---|
-| `search_web_pages` | Ranked web results with an excerpt of each page, narrowed by site or publication date when needed. |
+| `search_web_pages` | Ranked web results with an excerpt of each page, narrowed by site or publication date when needed. Optional `objective` (up to 1,000 characters) says what the search is for; Keenable ranks results by `query` and `objective` together. |
 | `fetch_page_content` | Any URL as clean markdown, or only the part an extraction prompt asks for. |
 
 ## Skill
@@ -109,7 +109,7 @@ The skill works with either server.
 ## Data and security
 
 The plugin talks only to `https://api.keenable.ai/mcp-public` over HTTPS. Search
-queries and requested URLs are sent to Keenable, along with an
+queries, the optional search `objective` and requested URLs are sent to Keenable, along with an
 `X-Keenable-Title` header (`antigravity` or `gemini-cli`) that identifies the
 plugin's traffic. It sends no credentials, runs no local code or shell commands,
 and reads no local files. See the [privacy policy](https://keenable.ai/privacy).
